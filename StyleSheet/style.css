@@ -1,0 +1,208 @@
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    height: 100%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 2em;
+    color: white;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: black;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+
+/*Header CSS---------------------------------------*/
+
+header { grid-area: header; }
+
+header{
+    background:rgba(78, 119, 186, 255);
+    border-radius: 10px;;
+    border: 1px solid white;
+    text-align: center;
+    width:100%;
+    height:200px;
+    padding: 10px;
+    
+}
+
+header h1{
+  
+}
+
+header object{
+  
+}
+
+/*Nav CSS-------------------------------------------*/
+
+nav { grid-area: nav; }
+
+nav{
+    background:rgba(78, 119, 186, 255);
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align:center;
+    width:100%;
+    
+    
+    
+}
+
+nav ol{
+    border:1px solid white;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    
+}
+
+nav li{
+    display:inline;
+    border: 1px solid white;
+    border-radius: 5px;;
+    padding:5px;
+    
+    
+}
+
+nav li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1em;
+    color:hsl(0,0%,255%);
+    display:inline-block;
+    padding:10px;
+
+    
+    
+}
+
+
+
+
+
+
+/*book1-5.html CSS---------------------------------------*/
+
+#orBookTitle { grid-area: title; }
+#fplinkArea { grid-area: main; }
+#orBookdCurrent { grid-area: currentBook; }
+#orBookDiscussions { grid-area: currentDiscussion; }
+#orBookVideo { grid-area: bookVideo; }
+
+
+.grid-container-book {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'title title title title title title'
+    'currentBook currentBook currentBook currentBook currentDiscussion currentDiscussion'
+    'currentBook currentBook currentBook currentBook bookVideo bookVideo'
+    'footer footer footer footer footer footer';
+  background-color: white;
+}
+
+#orBookTitle{
+    text-align: center;
+    background: rgb(212, 212, 134);
+
+}
+
+#orBookTitle h2{
+  font-size: 22px;
+  
+}
+
+#orBookTitle p{
+ 
+}
+
+
+footer { grid-area: footer; }
+
+
+footer
+{
+    background:rgb(40, 167, 69);
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+footer #fpcontactInformation
+{
+    background: rgb(243, 243, 226);
+    text-align: center;
+    margin: auto;
+    width:99%;
+    
+}
+
+footer #fpcontactInformation ul
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer #fpcontactInformation ul li
+{
+    display: inline-block;
+    margin:40px;
+    height: 30px;
+    
+}
+
+footer #fpcontactInformation #contact
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: red;
+}
+
+footer #fpcontactInformation #email
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: blue;
+}
